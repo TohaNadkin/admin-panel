@@ -1,0 +1,24 @@
+{
+  "extends": "@rgbadmin/tsconfig/base.json",
+  "compilerOptions": {
+    "module": "ESNext", // Поддержка ESM
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "isolatedModules": false,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "dist",
+    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
+    "strictPropertyInitialization": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noEmit": false
+  },
+  "ts-node": {
+    "esm": true // Эта опция включает поддержку ESM в `ts-node`
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
